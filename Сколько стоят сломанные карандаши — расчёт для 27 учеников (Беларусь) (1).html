@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Сколько стоят сломанные карандаши — расчёт для 27 учеников (Беларусь)</title>
+<meta name="description" content="Если каждый из 27 учеников ломает по карандашу в день, класс тратит до 2 295 BYN за учебный год. Наглядный расчёт для Беларуси, 2026.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F5EFE6;--mint:#DFF3E8;--yellow:#FFF3C4;--card:#fffdf8;--text:#2E2E2E;--muted:#5d5d5d;--accent:#E8A87C;--green:#6B9E78;--line:#e6dccb;--shadow:0 8px 24px rgba(60,50,30,.10);color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1c1f1d;--mint:#22302a;--yellow:#3a3519;--card:#262a27;--text:#ecebe6;--muted:#b3b1a8;--accent:#E8A87C;--green:#8dc29a;--line:#3a3f3b;--shadow:0 8px 24px rgba(0,0,0,.4);color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#1c1f1d;--mint:#22302a;--yellow:#3a3519;--card:#262a27;--text:#ecebe6;--muted:#b3b1a8;--accent:#E8A87C;--green:#8dc29a;--line:#3a3f3b;--shadow:0 8px 24px rgba(0,0,0,.4);color-scheme:dark}
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--text);font:400 17px/1.6 Manrope,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+h1,h2,h3{font-weight:800;line-height:1.15;margin:0 0 .5em;letter-spacing:-.02em}
+h1{font-size:clamp(2rem,6vw,3.6rem)}
+h2{font-size:clamp(1.5rem,4vw,2.3rem)}
+section{padding:72px 20px}
+.wrap{max-width:960px;margin:0 auto}
+.hero{background:linear-gradient(135deg,var(--mint),var(--yellow));min-height:92vh;display:flex;align-items:center}
+.hero .wrap{display:grid;grid-template-columns:1.3fr 1fr;gap:32px;align-items:center}
+.sub{font-size:1.2rem;color:var(--muted);margin:0 0 28px}
+.btn{display:inline-block;background:var(--accent);color:#2E2E2E;font-weight:800;text-decoration:none;padding:14px 28px;border-radius:999px;box-shadow:var(--shadow);transition:transform .2s}
+.btn:hover{transform:translateY(-2px)}
+.big-pencil{width:100%;max-width:200px;margin:0 auto;display:block;animation:sway 6s ease-in-out infinite;transform-origin:50% 60%;filter:drop-shadow(0 12px 14px rgba(0,0,0,.18))}
+@keyframes sway{0%,100%{transform:rotate(-14deg)}50%{transform:rotate(14deg)}}
+.big{font-size:clamp(3.5rem,14vw,7rem);font-weight:800;color:var(--accent);line-height:1;margin:.1em 0}
+.big small{font-size:.35em;color:var(--muted);font-weight:600}
+.card{background:var(--card);border-radius:20px;box-shadow:var(--shadow);padding:28px}
+.price{display:grid;grid-template-columns:1fr auto;gap:32px;align-items:center}
+.price svg{width:70px}
+.alt{background:var(--mint)}
+.row{display:flex;flex-wrap:wrap;gap:6px;margin:24px 0}
+.row svg{width:26px;height:52px}
+.eq{font-size:1.15rem}
+.eq b{color:var(--green)}
+.tw{overflow-x:auto;border-radius:20px;box-shadow:var(--shadow)}
+table{width:100%;border-collapse:collapse;background:var(--card);min-width:520px}
+th,td{padding:16px 18px;text-align:right;border-bottom:1px solid var(--line)}
+th:first-child,td:first-child{text-align:left}
+th{background:var(--green);color:#fff;font-weight:800}
+tbody tr{transition:background .2s}
+tbody tr:hover{background:var(--yellow)}
+td:last-child{font-weight:800;color:var(--accent)}
+.note{color:var(--muted);font-size:.95rem;margin-top:16px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
+.grid .card h3{font-size:1.15rem;color:var(--green)}
+.grid .card p{margin:0}
+ul{padding-left:1.2em;margin:0}
+li{margin:.5em 0}
+footer{background:var(--yellow);text-align:center;padding:36px 20px;color:var(--muted);font-size:.95rem}
+.js .fade{opacity:0;transform:translateY(20px);transition:opacity .7s,transform .7s}
+.js .fade.in{opacity:1;transform:none}
+@media (max-width:720px){section{padding:52px 18px}.hero .wrap,.price{grid-template-columns:1fr}.big-pencil{max-width:130px}.price svg{width:56px}}
+@media (prefers-reduced-motion:reduce){.big-pencil{animation:none}.js .fade{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+.steps{display:grid;gap:16px;counter-reset:s}
+.step{background:var(--card);border-radius:20px;box-shadow:var(--shadow);padding:20px 24px;display:grid;grid-template-columns:auto 1fr;gap:16px;align-items:start}
+.step::before{counter-increment:s;content:counter(s);background:var(--green);color:#fff;width:36px;height:36px;border-radius:50%;display:grid;place-items:center;font-weight:800}
+.step h3{margin:0 0 .3em;font-size:1.1rem}
+.step p{margin:.3em 0 0;color:var(--muted);font-size:.95rem}
+.f{font-family:ui-monospace,Menlo,Consolas,monospace;background:var(--yellow);padding:2px 8px;border-radius:8px;font-size:.95rem}
+.calc{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.calc label{display:flex;justify-content:space-between;font-weight:600;margin:16px 0 4px}
+.calc label:first-child{margin-top:0}
+.calc input[type=range]{width:100%;accent-color:var(--green)}
+.out div{display:flex;justify-content:space-between;gap:12px;padding:12px 0;border-bottom:1px solid var(--line)}
+.out div:last-child{border:0}
+.out b{color:var(--accent);font-size:1.15rem;text-align:right}
+h3.t{margin:32px 0 12px;font-size:1.2rem}
+.stat{font-size:clamp(2rem,7vw,3.2rem);font-weight:800;color:var(--accent);line-height:1.1}
+@media (max-width:720px){.calc{grid-template-columns:1fr}}
+.bg{position:fixed;inset:0;z-index:-1;overflow:hidden;pointer-events:none;background:linear-gradient(135deg,var(--mint),var(--bg) 48%,var(--yellow))}
+.bg::before{content:'';position:absolute;inset:-60px 0;background-image:linear-gradient(rgba(107,158,120,.12) 1px,transparent 1px),linear-gradient(90deg,rgba(107,158,120,.12) 1px,transparent 1px);background-size:44px 44px;background-position:0 calc(var(--sy,0)*-.15px);-webkit-mask-image:radial-gradient(ellipse at 50% 35%,#000 15%,transparent 78%);mask-image:radial-gradient(ellipse at 50% 35%,#000 15%,transparent 78%)}
+.blob{position:absolute;border-radius:50%;filter:blur(80px);will-change:transform;animation:blob 24s ease-in-out infinite alternate}
+.b1{width:48vmax;height:48vmax;left:-14vmax;top:-12vmax;background:var(--green);opacity:.28}
+.b2{width:42vmax;height:42vmax;right:-12vmax;top:18vh;background:var(--accent);opacity:.3;animation-duration:30s;animation-delay:-8s}
+.b3{width:38vmax;height:38vmax;left:22vw;bottom:-18vmax;background:var(--yellow);opacity:.9;animation-duration:36s;animation-delay:-14s}
+.fp{position:absolute;bottom:-160px;left:var(--x);width:var(--s);height:calc(var(--s)*4);opacity:0;animation:drift var(--d) linear var(--dl) infinite;filter:drop-shadow(0 6px 8px rgba(0,0,0,.14))}
+.hero{position:relative;overflow:hidden;padding-bottom:120px;background:linear-gradient(135deg,color-mix(in srgb,var(--mint) 55%,transparent),color-mix(in srgb,var(--yellow) 45%,transparent))}
+.wave{position:absolute;left:0;bottom:-1px;width:200%;height:90px;color:var(--bg);color:color-mix(in srgb,var(--bg) 80%,transparent);animation:wv 18s linear infinite;pointer-events:none}
+.w2{height:70px;color:var(--mint);color:color-mix(in srgb,var(--mint) 70%,transparent);animation-duration:28s;animation-direction:reverse}
+.alt{background:color-mix(in srgb,var(--mint) 55%,transparent)}
+.card{background:color-mix(in srgb,var(--card) 88%,transparent);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px)}
+@keyframes blob{0%{transform:translate(0,0) scale(1)}50%{transform:translate(9vw,7vh) scale(1.18)}100%{transform:translate(-7vw,14vh) scale(.92)}}
+@keyframes drift{0%{opacity:0;transform:translate3d(0,0,0) rotate(var(--r))}12%,88%{opacity:.32}100%{opacity:0;transform:translate3d(var(--dx),-130vh,0) rotate(calc(var(--r) + 140deg))}}
+@keyframes wv{to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion:reduce){.bg,.blob,.fp,.wave{animation:none}.fp{display:none}}
+</style>
+</head>
+<body>
+<div class='bg' id='bg' aria-hidden='true'><i class='blob b1'></i><i class='blob b2'></i><i class='blob b3'></i></div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<symbol id="pc" viewBox="0 0 20 80">
+<rect x="3" y="2" width="14" height="9" rx="2" fill="#F2A0A8"/>
+<rect x="3" y="11" width="14" height="3" fill="#B9B9B9"/>
+<rect x="3" y="14" width="14" height="42" fill="#F6C93A"/>
+<rect x="3" y="14" width="5" height="42" fill="#E3B21F"/>
+<path d="M3 56h14L10 76z" fill="#E9C9A0"/>
+<path d="M8 68h4l-2 8z" fill="#3a3a3a"/>
+</symbol>
+</svg>
+
+<section class="hero">
+<svg class='wave w2' viewBox='0 0 2880 80' preserveAspectRatio='none' aria-hidden='true'><path fill='currentColor' d='M0 40Q360 0 720 40T1440 40T2160 40T2880 40V80H0Z'/></svg>
+<svg class='wave' viewBox='0 0 2880 80' preserveAspectRatio='none' aria-hidden='true'><path fill='currentColor' d='M0 40Q360 0 720 40T1440 40T2160 40T2880 40V80H0Z'/></svg>
+<div class="wrap">
+<div>
+<h1>27 учеников. 1 карандаш в день. Сколько это стоит?</h1>
+<p class="sub">Расчёт для Беларуси · 2026</p>
+<a class="btn" href="#table">Смотреть расчёт</a>
+</div>
+<svg class="big-pencil" viewBox="0 0 20 80" role="img" aria-label="Карандаш"><use href="#pc"/></svg>
+</div>
+</section>
+
+<section>
+<div class="wrap fade">
+<h2>Средняя цена карандаша в Беларуси</h2>
+<div class="card price">
+<div>
+<div class="big">0,50 <small>BYN</small></div>
+<p style="margin:0">Средняя ориентировочная цена простого карандаша. Реальный диапазон — от <b>0,16 BYN</b> до <b>1,00 BYN</b> в зависимости от бренда и места покупки.</p>
+</div>
+<svg viewBox="0 0 20 80" role="img" aria-label="Карандаш"><use href="#pc"/></svg>
+</div>
+</div>
+</section>
+
+<section class="alt">
+<div class="wrap fade">
+<h2>Что происходит за день</h2>
+<p class="eq">27 учеников × 1 карандаш = <b>27 сломанных карандашей в день</b></p>
+<div class="row" id="row" aria-hidden="true"></div>
+<p class="eq">Ежедневные затраты: <b>13,50 BYN</b></p>
+</div>
+</section>
+
+<section id="table">
+<div class="wrap fade">
+<h2>Масштаб за неделю, месяц и год</h2>
+<div class="tw">
+<table>
+<thead><tr><th>Период</th><th>Учебных дней</th><th>Сломано карандашей</th><th>Стоимость (BYN)</th></tr></thead>
+<tbody>
+<tr><td>Один день</td><td>1</td><td>27</td><td>13,50</td></tr>
+<tr><td>Одна неделя</td><td>5</td><td>135</td><td>67,50</td></tr>
+<tr><td>Один месяц</td><td>20</td><td>540</td><td>270,00</td></tr>
+<tr><td>Учебный год</td><td>170</td><td>4&nbsp;590</td><td>2&nbsp;295,00</td></tr>
+</tbody>
+</table>
+</div>
+<p class="note">Это теоретический максимум. В реальности — каникулы, пропуски и дни без поломок, поэтому фактические расходы ниже.</p>
+</div>
+</section>
+
+<section class="alt">
+<div class="wrap fade">
+<h2>Как считали: шаг за шагом</h2>
+<p class="sub">Каждая цифра в таблице — обычное умножение. Вот вся цепочка.</p>
+<div class="steps">
+<div class="step"><div><h3>Карандашей в день</h3><span class="f">27 учеников × 1 карандаш = 27 шт.</span><p>Исходное допущение: каждый ученик ломает ровно один карандаш за учебный день.</p></div></div>
+<div class="step"><div><h3>Стоимость одного дня</h3><span class="f">27 × 0,50 BYN = 13,50 BYN</span><p>Берём среднюю ориентировочную цену простого карандаша.</p></div></div>
+<div class="step"><div><h3>Неделя</h3><span class="f">13,50 × 5 дней = 67,50 BYN</span><p>135 карандашей: 27 × 5.</p></div></div>
+<div class="step"><div><h3>Месяц</h3><span class="f">13,50 × 20 дней = 270,00 BYN</span><p>540 карандашей: 27 × 20.</p></div></div>
+<div class="step"><div><h3>Учебный год</h3><span class="f">13,50 × 170 дней = 2 295,00 BYN</span><p>4 590 карандашей: 27 × 170.</p></div></div>
+<div class="step"><div><h3>На одного ученика</h3><span class="f">2 295 ÷ 27 = 85,00 BYN в год</span><p>Это 170 карандашей на человека по 0,50 BYN: ровно один на каждый учебный день.</p></div></div>
+</div>
+</div>
+</section>
+
+<section>
+<div class="wrap fade">
+<h2>А если цена или частота другие?</h2>
+<p class="sub">Расчёт сильно зависит от двух допущений. Посмотрим, как меняется итог за учебный год.</p>
+<h3 class="t">Разная цена карандаша</h3>
+<div class="tw"><table>
+<thead><tr><th>Сценарий</th><th>Цена, BYN</th><th>За день, BYN</th><th>За год, BYN</th></tr></thead>
+<tbody>
+<tr><td>Дешёвый</td><td>0,16</td><td>4,32</td><td>734,40</td></tr>
+<tr><td>Средний</td><td>0,50</td><td>13,50</td><td>2&nbsp;295,00</td></tr>
+<tr><td>Дорогой</td><td>1,00</td><td>27,00</td><td>4&nbsp;590,00</td></tr>
+</tbody></table></div>
+<h3 class="t">Не каждый ученик ломает карандаш каждый день</h3>
+<div class="tw"><table>
+<thead><tr><th>Доля поломок</th><th>Карандашей за год</th><th>Стоимость при 0,50 BYN</th></tr></thead>
+<tbody>
+<tr><td>100% (максимум)</td><td>4&nbsp;590</td><td>2&nbsp;295,00</td></tr>
+<tr><td>50%</td><td>2&nbsp;295</td><td>1&nbsp;147,50</td></tr>
+<tr><td>25%</td><td>≈ 1&nbsp;148</td><td>573,75</td></tr>
+<tr><td>10%</td><td>459</td><td>229,50</td></tr>
+</tbody></table></div>
+<p class="note">Вывод: даже при 10% поломок класс теряет больше 200 BYN в год, а при дорогих карандашах и полном максимуме — до 4 590 BYN.</p>
+</div>
+</section>
+
+<section class="alt">
+<div class="wrap fade">
+<h2>Посчитайте для своего класса</h2>
+<p class="sub">Подвигайте ползунки и подставьте свои данные.</p>
+<div class="card calc">
+<div>
+<label for="n">Учеников в классе <b id="nv"></b></label><input id="n" type="range" min="10" max="40" step="1" value="27">
+<label for="p">Цена карандаша, BYN <b id="pv"></b></label><input id="p" type="range" min="0.1" max="2" step="0.05" value="0.5">
+<label for="d">Учебных дней в году <b id="dv"></b></label><input id="d" type="range" min="100" max="200" step="5" value="170">
+<label for="s">Доля учеников, ломающих карандаш в день <b id="sv"></b></label><input id="s" type="range" min="5" max="100" step="5" value="100">
+</div>
+<div class="out">
+<div><span>Сломано в день</span><b id="r1"></b></div>
+<div><span>Расходы за день</span><b id="r2"></b></div>
+<div><span>Сломано за год</span><b id="r3"></b></div>
+<div><span>Расходы за год</span><b id="r4"></b></div>
+<div><span>На одного ученика в год</span><b id="r5"></b></div>
+</div>
+</div>
+</div>
+</section>
+
+<section>
+<div class="wrap fade">
+<h2>Цена времени</h2>
+<p class="sub">Деньги — не единственная потеря. Каждая поломка — это пауза в работе: достать точилку, дойти до корзины, вернуться к заданию.</p>
+<div class="card">
+<p style="margin-top:0">Допустим, одна поломка забирает у ученика <b>30 секунд</b>:</p>
+<p><span class="f">27 × 30 с = 810 с ≈ 13,5 мин в день</span></p>
+<p><span class="f">13,5 мин × 170 дней = 2 295 мин</span></p>
+<div class="stat">≈ 38 часов 15 минут</div>
+<p class="note">Столько суммарного ученического времени уходит за год. Это допущение для наглядности: у реального класса паузы короче или длиннее, и они накладываются друг на друга.</p>
+</div>
+</div>
+</section>
+
+<section class="alt">
+<div class="wrap fade">
+<h2>Почему это важно</h2>
+<div class="grid">
+<div class="card"><h3>Мелочь, которая копится</h3><p>Карандаш кажется пустяком, но за год сумма становится заметной.</p></div>
+<div class="card"><h3>Не только деньги</h3><p>Поломки — это время на замену, точилку и наведение порядка на уроке.</p></div>
+<div class="card"><h3>Планирование закупок</h3><p>Расчёт помогает заранее заложить канцтовары на класс.</p></div>
+</div>
+</div>
+</section>
+
+<section>
+<div class="wrap fade">
+<h2>Как сократить потери</h2>
+<div class="grid">
+<div class="card"><h3>Подходящий карандаш</h3><p>Шестигранный карандаш с проклеенным грифелем ломается реже. Самый дешёвый вариант часто обходится дороже из-за поломок.</p></div>
+<div class="card"><h3>Пенал вместо парты</h3><p>Падения со стола и карандаши, лежащие россыпью в рюкзаке, — частая причина сломанных грифелей.</p></div>
+<div class="card"><h3>Хорошая точилка</h3><p>Острая и аккуратная заточка без чрезмерно тонкого кончика. Точилка с контейнером экономит ещё и время.</p></div>
+<div class="card"><h3>Общий запас класса</h3><p>Небольшой фонд карандашей на классе снимает споры и позволяет закупать оптом по лучшей цене.</p></div>
+<div class="card"><h3>Механический карандаш</h3><p>Для старших классов грифель 0,5 мм в корпусе почти не требует заточки и служит месяцами.</p></div>
+<div class="card"><h3>Своя статистика</h3><p>Неделю посчитайте реальные поломки в классе и подставьте долю в калькулятор выше.</p></div>
+</div>
+</div>
+</section>
+
+<section class="alt">
+<div class="wrap fade">
+<h2>Источники и допущения</h2>
+<ul>
+<li>Средняя цена взята как ориентир <b>0,50 BYN</b>; реальный разброс — <b>0,16–1,00 BYN</b>.</li>
+<li>Учебных дней в году — <b>170</b>; в месяце — <b>20</b>.</li>
+<li>Базовый сценарий: каждый ученик ломает ровно один карандаш в каждый учебный день (100%).</li>
+<li>Потери времени посчитаны при допущении 30 секунд на одну поломку.</li>
+<li>Все суммы носят иллюстративный характер и не являются коммерческим предложением.</li>
+</ul>
+</div>
+</section>
+
+<footer>Сделано для наглядного расчёта школьных расходов · Беларусь · 2026</footer>
+
+<script>
+document.documentElement.classList.add('js');
+var row=document.getElementById('row');
+for(var i=0;i<27;i++){
+  var s=document.createElementNS('http://www.w3.org/2000/svg','svg');
+  s.setAttribute('viewBox','0 0 20 80');
+  var u=document.createElementNS('http://www.w3.org/2000/svg','use');
+  u.setAttribute('href','#pc');
+  s.appendChild(u);
+  row.appendChild(s);
+}
+var g=function(i){return document.getElementById(i)};
+var fmt=function(x,d){return x.toLocaleString('ru-RU',{minimumFractionDigits:d,maximumFractionDigits:d})};
+function calc(){
+  var n=+g('n').value,p=+g('p').value,d=+g('d').value,s=+g('s').value/100;
+  var day=n*s,yr=day*d;
+  g('nv').textContent=n;g('pv').textContent=fmt(p,2);g('dv').textContent=d;g('sv').textContent=Math.round(s*100)+'%';
+  g('r1').textContent=fmt(Math.round(day),0)+' шт.';
+  g('r2').textContent=fmt(day*p,2)+' BYN';
+  g('r3').textContent=fmt(Math.round(yr),0)+' шт.';
+  g('r4').textContent=fmt(yr*p,2)+' BYN';
+  g('r5').textContent=fmt(yr*p/n,2)+' BYN';
+}
+['n','p','d','s'].forEach(function(i){g(i).addEventListener('input',calc)});
+calc();
+var bg=document.getElementById('bg'),NS='http://www.w3.org/2000/svg',rnd=Math.random;
+if(!matchMedia('(prefers-reduced-motion:reduce)').matches){
+  for(var k=0;k<9;k++){
+    var bs=document.createElementNS(NS,'svg'),bu=document.createElementNS(NS,'use');
+    bs.setAttribute('class','fp');bs.setAttribute('viewBox','0 0 20 80');bu.setAttribute('href','#pc');bs.appendChild(bu);
+    bs.style.cssText='--x:'+(4+k*10.5+rnd()*4)+'%;--s:'+(20+rnd()*26)+'px;--d:'+(28+rnd()*24)+'s;--dl:-'+(rnd()*50)+'s;--r:'+(rnd()*80-40)+'deg;--dx:'+(rnd()*180-90)+'px';
+    bg.appendChild(bs);
+  }
+  addEventListener('scroll',function(){bg.style.setProperty('--sy',scrollY)},{passive:true});
+}
+var els=document.querySelectorAll('.fade');
+if('IntersectionObserver' in window){
+  var io=new IntersectionObserver(function(es){
+    es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});
+  },{threshold:.15});
+  els.forEach(function(el){io.observe(el);});
+}else{els.forEach(function(el){el.classList.add('in');});}
+</script>
+</body>
+</html>
